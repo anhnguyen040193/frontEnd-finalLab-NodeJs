@@ -1,0 +1,44 @@
+.category__title {
+  margin: 20px 15px;
+  height: 50px;
+  font-family: Roboto, sans-serif;
+  border-bottom: solid 1px #80808026;
+}
+
+.category__id {
+  width: 30%;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+}
+
+.category__name {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+}
+
+.category__des {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+}
+
+.category__ID {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+
+.category__Name {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+
+.category__Des {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+/*# sourceMappingURL=category.css.map */

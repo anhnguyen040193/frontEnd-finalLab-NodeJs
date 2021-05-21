@@ -1,0 +1,57 @@
+.dash__title {
+  margin: 5px 15px;
+  height: 50px;
+  font-family: Roboto, sans-serif;
+  border-bottom: solid 1px #80808026;
+}
+
+.dash__spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70%;
+}
+
+.dash__flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px;
+  height: 70px;
+  color: white;
+}
+
+.dash__flexbox .dash__icon {
+  font-size: 50px;
+}
+
+.dash__flexbox .dash__length {
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+}
+
+.dash__flexbox .dash__name {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+/*# sourceMappingURL=dashboard.css.map */

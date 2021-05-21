@@ -1,0 +1,54 @@
+.user__id {
+  width: 22%;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+}
+
+.user__table .dropdown #pageDropDown span.caret {
+  display: none;
+}
+
+.dropdown-menu {
+  min-width: 5rem;
+}
+
+.react-bs-table table td, .react-bs-table table th {
+  white-space: unset;
+}
+
+.user__expand {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__expand_input {
+  width: 100px;
+}
+
+.user__icon_filter {
+  margin-left: 5px;
+  color: #1715156b;
+  font-size: 13px;
+}
+
+.user__table td {
+  font-size: 14px;
+}
+
+.user__table th {
+  font-size: 14px;
+}
+/*# sourceMappingURL=user.css.map */

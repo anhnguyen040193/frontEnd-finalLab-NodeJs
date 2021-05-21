@@ -1,0 +1,21 @@
+.iconUser{
+    color:#6262f5
+}
+.underBorder{
+    border-bottom: solid 1px #6c757d;
+}
+
+.navbar-light .navbar-brand{
+    color: grey;
+}
+
+.navbar{
+    margin-bottom: 0;
+  }
+
+  .header__flex{
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+  }

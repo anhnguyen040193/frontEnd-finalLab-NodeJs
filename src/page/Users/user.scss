@@ -1,0 +1,43 @@
+.user__id{
+    width: 22%;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+}
+
+
+.user__table .dropdown #pageDropDown span.caret{
+    display:none
+}
+.dropdown-menu{
+    min-width:5rem
+}
+
+
+.react-bs-table table td, .react-bs-table table th{
+    white-space:unset
+}
+
+.user__expand{
+    width: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    &_input{
+        width: 100px;
+    }
+}
+.user__icon_filter{
+    margin-left: 5px;
+    color: #1715156b;
+    font-size: 13px;
+}
+.user__table td{
+    font-size: 14px;
+}
+
+.user__table th{
+    font-size: 14px;
+}
+
