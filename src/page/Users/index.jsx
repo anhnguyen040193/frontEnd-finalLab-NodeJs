@@ -10,6 +10,7 @@ class User extends Component {
       userData: [],
       loading: true,
     };
+    this.myRef = React.createRef();
   }
   async componentDidMount() {
     try {
@@ -73,11 +74,7 @@ class User extends Component {
     const options = {
       sizePerPageList: [10, 20, 30],
       expandRowBgColor: "#f8f9fa",
-      onRowClick: function (row) {
-        console.log(row);
-      },
     };
-
     return (
       <div className="container">
         {loading ? (
@@ -91,7 +88,7 @@ class User extends Component {
             <h2 className="category__title">User</h2>
             <div className="user__table">
               <BootstrapTable
-                ref="table"
+                ref={this.myRef}
                 data={userData}
                 hover
                 search={true}
@@ -99,6 +96,7 @@ class User extends Component {
                 pagination
                 expandableRow={this.isExpandableRow}
                 expandComponent={this.expandComponent}
+                bodyStyle={{ fontFamily: "Roboto, sans-serif" }}
               >
                 <TableHeaderColumn
                   width="210"
@@ -108,7 +106,7 @@ class User extends Component {
                   dataSort
                 >
                   ID
-                  <i className="fas fa-filter user__icon_filter"></i>
+                  <i className="fas fa-sort"></i>
                 </TableHeaderColumn>
                 <TableHeaderColumn
                   dataField="avatar"
@@ -118,25 +116,39 @@ class User extends Component {
                   Avatar
                 </TableHeaderColumn>
                 <TableHeaderColumn width="115px" dataField="firstName" dataSort>
-                  First Name <i className="fas fa-filter user__icon_filter"></i>
+                  First Name <i className="fas fa-sort"></i>
                 </TableHeaderColumn>
                 <TableHeaderColumn width="115px" dataField="lastName" dataSort>
-                  Last Name <i className="fas fa-filter user__icon_filter"></i>
+                  Last Name <i className="fas fa-sort"></i>
                 </TableHeaderColumn>
                 <TableHeaderColumn width="100px" dataField="dob" dataSort>
-                  DOB <i className="fas fa-filter user__icon_filter"></i>
+                  DOB <i className="fas fa-sort"></i>
                 </TableHeaderColumn>
 
-                <TableHeaderColumn width="20%" dataField="email" dataSort>
+                <TableHeaderColumn
+                  tdStyle={{ whiteSpace: "normal", wordWrap: "break-word" }}
+                  width="20%"
+                  dataField="email"
+                  dataSort
+                >
                   Email
                 </TableHeaderColumn>
 
-                <TableHeaderColumn width="10%" dataField="isEmailValidate">
+                <TableHeaderColumn
+                  tdStyle={{ whiteSpace: "normal", wordWrap: "break-word" }}
+                  width="10%"
+                  dataField="isEmailValidate"
+                >
                   Email Verifield
                 </TableHeaderColumn>
 
-                <TableHeaderColumn width="10%" dataField="roles" dataSort>
-                  Roles <i className="fas fa-filter user__icon_filter"></i>
+                <TableHeaderColumn
+                  tdStyle={{ whiteSpace: "normal", wordWrap: "break-word" }}
+                  width="10%"
+                  dataField="roles"
+                  dataSort
+                >
+                  Roles <i className="fas fa-sort"></i>
                 </TableHeaderColumn>
               </BootstrapTable>
             </div>

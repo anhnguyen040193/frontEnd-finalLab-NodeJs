@@ -1,0 +1,44 @@
+.productDT__form {
+  padding: 35px;
+  border: solid 1px #8080804d;
+  border-radius: 5px;
+}
+
+.productDT__form_item label {
+  width: 130px;
+}
+
+.productDT__form_title {
+  margin: -35px -35px 25px -35px;
+  border-bottom: solid 1px #8080804d;
+  padding: 15px;
+  background: #cb64ff;
+  color: white;
+}
+
+.productDT__form_text {
+  border: solid 1px #8080804d;
+  border-radius: 5px;
+}
+
+.productDT__form_text:focus {
+  outline: none;
+  border: solid 1px #cb64ff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 0px #cb64ff;
+          box-shadow: 0px 0px 5px 0px #cb64ff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+/*# sourceMappingURL=productdetail.css.map */

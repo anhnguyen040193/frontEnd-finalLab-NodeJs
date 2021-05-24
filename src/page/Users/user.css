@@ -51,4 +51,8 @@
 .user__table th {
   font-size: 14px;
 }
+
+.user__table_roles {
+  display: none;
+}
 /*# sourceMappingURL=user.css.map */
