@@ -4,6 +4,7 @@
     padding-left: 0;
     padding-right: 0;
     border-right: solid 1px #8080803b;
+    background-image: url("../../../image/161002502_114667417348886_4262286945997779815_o.jpg");
     &__link{
         padding:0;
     }
@@ -31,15 +32,21 @@
     &:hover{
         background-color: rgba(199, 198, 198, 0.479);
         & i{
-            color: royalblue;
+            color: #1f1e1e94;
         }
-        & a{
-            color:royalblue
+        & p{
+            color: #1f1e1e94;
         }
     }
 }
 .highlight{
-    background-color: rgba(199, 198, 198, 0.479);
+    font-weight: bold;
+    background-color: rgb(199 198 198 / 62%);
+    color: #1f1e1e94;
+    & i{
+        color: #1f1e1e94;
+    }
+
 }
 .nohightlight{
     background-color: #f8f9fa;

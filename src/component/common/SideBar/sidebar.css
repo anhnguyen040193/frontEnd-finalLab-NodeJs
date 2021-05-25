@@ -4,6 +4,7 @@
   padding-left: 0;
   padding-right: 0;
   border-right: solid 1px #8080803b;
+  background-image: url("../../../image/161002502_114667417348886_4262286945997779815_o.jpg");
 }
 
 .sidebar__link {
@@ -47,15 +48,21 @@
 }
 
 .editNavItem:hover i {
-  color: royalblue;
+  color: #1f1e1e94;
 }
 
-.editNavItem:hover a {
-  color: royalblue;
+.editNavItem:hover p {
+  color: #1f1e1e94;
 }
 
 .highlight {
+  font-weight: bold;
   background-color: rgba(199, 198, 198, 0.479);
+  color: #1f1e1e94;
+}
+
+.highlight i {
+  color: #1f1e1e94;
 }
 
 .nohightlight {
