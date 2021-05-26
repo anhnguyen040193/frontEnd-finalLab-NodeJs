@@ -22,7 +22,7 @@ class Products extends Component {
     }
   }
   imageFormatter = (cell, row) => {
-    return "<img  src='" + cell + "'/>";
+    return <img src={cell} style={{ width: "60px" }} />;
   };
   IDFormatter = (cell, row) => {
     return <Link to={`/products-detail/${cell}`}>{cell}</Link>;
@@ -33,7 +33,6 @@ class Products extends Component {
       sizePerPageList: [10, 20, 30],
     };
 
-    console.log(productData);
     return (
       <div className="container">
         {loading ? (
@@ -121,7 +120,11 @@ class Products extends Component {
                 </TableHeaderColumn>
 
                 <TableHeaderColumn
-                  tdStyle={{ whiteSpace: "normal", wordWrap: "break-word" }}
+                  tdStyle={{
+                    whiteSpace: "normal",
+                    wordWrap: "break-word",
+                    textAlign: "center",
+                  }}
                   dataField="image"
                   dataFormat={this.imageFormatter}
                   width="100px"

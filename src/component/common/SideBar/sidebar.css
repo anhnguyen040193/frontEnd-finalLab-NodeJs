@@ -5,6 +5,9 @@
   padding-right: 0;
   border-right: solid 1px #8080803b;
   background-image: url("../../../image/161002502_114667417348886_4262286945997779815_o.jpg");
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
 }
 
 .sidebar__link {

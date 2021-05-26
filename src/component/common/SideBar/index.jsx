@@ -32,7 +32,7 @@ class SideBar extends Component {
                 <p>Dashboard</p>
               </li>
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className="nav-link sidebar__link"
               to="/oders"
               onClick={() => this.handleClick(2)}
@@ -46,7 +46,7 @@ class SideBar extends Component {
                 <i className="fas fa-shopping-cart"></i>
                 <p>Orders</p>
               </li>
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className="nav-link sidebar__link"
               to="/products"

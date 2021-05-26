@@ -7,7 +7,8 @@ const userAPI = {
     return axiosClient.get(url, { params });
   },
   upImage: (params) => {
-    const url = "https://final-lab-nodejs.herokuapp.com/api/users/uploadImage";
+    // const url = "https://final-lab-nodejs.herokuapp.com/api/users/uploadImage";
+    const url = "http://localhost:3001/api/users/uploadImage";
     return axios.post(url, params, {
       headers: { "Content-Type": "multipart/form-data" },
     });
