@@ -18,6 +18,7 @@ class ProductAdd extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     const { newData } = this.state;
+    const { history } = this.props;
     const newValues = {
       name: newData.name === undefined ? "" : newData.name,
       shortDescription:
@@ -27,9 +28,10 @@ class ProductAdd extends Component {
       originalPrice:
         newData.originalPrice === undefined ? "" : newData.originalPrice,
     };
-    await productAPI
-      .addProduct(newValues)
-      .then((value) => alert(value.message));
+    await productAPI.addProduct(newValues).then((value) => {
+      alert(value.message);
+      return history.push("/products");
+    });
   };
   render() {
     return (
