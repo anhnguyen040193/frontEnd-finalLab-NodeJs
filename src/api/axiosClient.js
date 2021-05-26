@@ -6,8 +6,8 @@ import queryString from "query-string";
 // Please have a look at here `https://github.com/axios/axios#request-config ` for the full list of configs`
 // const url = "http://localhost:3001/api/products/uploadImage";
 const axiosClient = axios.create({
-  baseURL: "http://localhost:3001/api/",
-  // baseURL: process.env.REACT_APP_API_LINK,
+  // baseURL: "http://localhost:3001/api/",
+  baseURL: process.env.REACT_APP_API_LINK,
   headers: {
     "content-type": "application/json",
   },
