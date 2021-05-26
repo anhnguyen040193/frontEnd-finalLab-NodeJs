@@ -1,0 +1,12 @@
+.product_title {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #80808026;
+  margin-bottom: 20px;
+  padding:15px;
+  & h2 {
+    font-family: Roboto, sans-serif;
+  }
+}

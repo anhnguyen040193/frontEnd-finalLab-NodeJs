@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import productAPI from "../../api/productAPI";
 import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
 import { Link } from "react-router-dom";
+import "./product.css";
 class Products extends Component {
   constructor(props) {
     super(props);
@@ -43,7 +44,12 @@ class Products extends Component {
           </div>
         ) : (
           <>
-            <h2 className="category__title">Products</h2>
+            <div className="product_title">
+              <h2>Products</h2>
+              <Link className="btn btn-primary" to="/product-add">
+                Add Product
+              </Link>
+            </div>
             <div className="user__table">
               <BootstrapTable
                 data={productData}

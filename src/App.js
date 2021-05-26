@@ -9,6 +9,7 @@ import Category from "./page/Category";
 import Product from "./page/Products";
 import User from "./page/Users";
 import ProductDetail from "./page/ProductDetail";
+import ProductAdd from "./page/AddProduct";
 function App() {
   return (
     <div className="app">
@@ -21,6 +22,7 @@ function App() {
             <Route path="/oders" component={Oder} />
             <Route path="/category" component={Category} />
             <Route path="/products" component={Product} />
+            <Route path="/product-add" component={ProductAdd} />
             <Route path="/products-detail/:id" component={ProductDetail} />
             <Route path="/users" component={User} />
           </Switch>

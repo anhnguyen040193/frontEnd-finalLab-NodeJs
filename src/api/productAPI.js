@@ -23,6 +23,10 @@ const productAPI = {
       headers: { "Content-Type": "multipart/form-data" },
     });
   },
+  addProduct: (params) => {
+    const url = "/products/add";
+    return axiosClient.post(url, { params });
+  },
 };
 
 export default productAPI;
