@@ -44,3 +44,14 @@
 .user__table_roles{
     display:none
 }
+
+.styleID{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border:solid 1px #28a745;
+    border-radius: 5px;
+    color: white;
+    background-color: #28a745;
+}

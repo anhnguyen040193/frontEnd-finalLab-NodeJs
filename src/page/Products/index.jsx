@@ -26,7 +26,14 @@ class Products extends Component {
     return <img src={cell} style={{ width: "60px" }} />;
   };
   IDFormatter = (cell, row) => {
-    return <Link to={`/products-detail/${cell}`}>{cell}</Link>;
+    return (
+      <Link
+        className="btn btn-primary stylebtnId"
+        to={`/products-detail/${cell}`}
+      >
+        {cell}
+      </Link>
+    );
   };
   render() {
     const { loading, productData } = this.state;
@@ -60,7 +67,7 @@ class Products extends Component {
                 bodyStyle={{ fontFamily: "Roboto, sans-serif" }}
               >
                 <TableHeaderColumn
-                  width="180"
+                  width="160"
                   height="50px"
                   isKey={true}
                   dataField="_id"

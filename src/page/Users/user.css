@@ -55,4 +55,24 @@
 .user__table_roles {
   display: none;
 }
+
+.styleID {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px #28a745;
+  border-radius: 5px;
+  color: white;
+  background-color: #28a745;
+}
 /*# sourceMappingURL=user.css.map */

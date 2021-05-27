@@ -33,6 +33,14 @@ class User extends Component {
   imageFormatter = (cell, row) => {
     return "<img src='" + cell + "'/>";
   };
+  imageFormatterID = (cell, row) => {
+    return (
+      <div className="styleID">
+        {cell}
+        <i className="fas fa-arrows-alt-v" style={{ marginLeft: "5px" }}></i>
+      </div>
+    );
+  };
   isExpandableRow(row) {
     if (row._id) return true;
     else return false;
@@ -96,7 +104,10 @@ class User extends Component {
                 pagination
                 expandableRow={this.isExpandableRow}
                 expandComponent={this.expandComponent}
-                bodyStyle={{ fontFamily: "Roboto, sans-serif" }}
+                bodyStyle={{
+                  cursor: "pointer",
+                  fontFamily: "Roboto, sans-serif",
+                }}
               >
                 <TableHeaderColumn
                   width="210"
@@ -104,6 +115,7 @@ class User extends Component {
                   isKey={true}
                   dataField="_id"
                   dataSort
+                  dataFormat={this.imageFormatterID}
                 >
                   ID
                   <i className="fas fa-sort"></i>
